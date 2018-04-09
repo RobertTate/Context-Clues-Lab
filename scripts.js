@@ -1,15 +1,13 @@
 var friend = ['Thomas', 'Chris', 'Ives', 'Ian', 'Matt'];
 var roomName = ['study', 'observatory', 'kitchen', 'master bedroom', 'ballroom', 'gardens', 'hallway', 'lounge', 'dining room', 'library'];
-var weapon = ['letter opener', 'rope', 'revolver', 'kitchen knife', 'candlestick', 'piano wire', 'ak-47', 'shoe-blade', 'poison pill', 'gasoline & match', 'throwing star', 'minigun', 'heavy book', 'trash can', 'pruning sheers', 'IED', 'spoon', 'giant anvil', 'toothbrush'];
-
-
+var weapon = ['letter opener', 'rope', 'revolver', 'kitchen knife', 'candlestick', 'piano wire', 'ak-47', 'shoe-blade', 'poison pill', 'gasoline & match', 'throwing star', 'minigun', 'heavy book', 'trash can', 'pruning sheers', 'IED', 'spoon', 'giant anvil', 'toothbrush', 'stick'];
 
 function getAlert(i) {
     var friendRotate = friend[i % 5];
     var roomNameRotate = roomName[i % 10];
     var weaponRotate = weapon[i % 20];
     function setAlert() {
-        alert(`Accusation ${i}: I accuse ${friendRotate}, with the ${roomNameRotate} in the ${weaponRotate}!`);
+        alert(`Accusation ${i}: I accuse ${friendRotate}, with the ${weaponRotate} in the ${roomNameRotate}!`);
     }
     return setAlert;
 }
